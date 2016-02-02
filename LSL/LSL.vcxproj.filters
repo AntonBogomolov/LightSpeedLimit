@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{97fecd8c-8a31-4c57-b293-18e1748f4cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\SimpleTypes">
+      <UniqueIdentifier>{80c39664-d22f-4d97-bb26-8f079f128c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Managers">
+      <UniqueIdentifier>{ef312e16-2d35-489e-9787-8ab124777211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Textures">
+      <UniqueIdentifier>{fd60146f-627f-4943-97a0-076ea6cac9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Timers">
+      <UniqueIdentifier>{aced6fd2-544a-4cb2-907f-8c16cd72062f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Shaders">
+      <UniqueIdentifier>{531a9d3d-78bf-4a15-a9ad-f8fbfc085e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Scene">
+      <UniqueIdentifier>{3d98c2e0-1ad9-4a6d-ae45-6b30bcc9894d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Renderer">
+      <UniqueIdentifier>{8747d4e3-f4d6-47b0-8017-09dd9cd4c3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\VBO &amp; FBO">
+      <UniqueIdentifier>{ddf3292d-8acd-4011-a467-c46bc16d6c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Objects">
+      <UniqueIdentifier>{be7e9a5a-9cfc-4c08-a087-49f2f1d167b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Camera">
+      <UniqueIdentifier>{c726ab78-e597-4f8c-8198-35c885261c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{7fe52079-d41d-43d9-845e-a2ac69d3da41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{e1d725ad-cda8-4b2b-bf93-9b508a919bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\Objects">
+      <UniqueIdentifier>{f635ff5e-67b8-4458-b934-b83649753c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Physics">
+      <UniqueIdentifier>{692df92b-6458-4be2-aae2-5dc8006151e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\StarSystem">
+      <UniqueIdentifier>{b6e8b2fd-04ac-41f7-9c6c-1e12e4aefef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Utils">
+      <UniqueIdentifier>{03d0e123-c7c4-4fb8-8c15-780f21f12c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Events">
+      <UniqueIdentifier>{615c7f0a-de0f-45d0-950c-5bb1a0543a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\DrawablePrimitives">
+      <UniqueIdentifier>{f0156a10-6c73-43f4-b3af-f782966327d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\DrawablePrimitives\Sprites">
+      <UniqueIdentifier>{fd6c928f-1f98-4f0e-adf1-e02a136cbd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\Scenes">
+      <UniqueIdentifier>{b0e27d1d-4fed-4a91-b8e4-ffdd7210207a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>engine\SimpleTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="EventsManager.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureAtlasManager.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManeger.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>engine\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureAtlas.cpp">
+      <Filter>engine\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameBuffer.cpp">
+      <Filter>engine\VBO &amp; FBO</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>engine\VBO &amp; FBO</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>engine\VBO &amp; FBO</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>engine\Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameTimer.cpp">
+      <Filter>engine\Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="GLMatrixSet.cpp">
+      <Filter>engine\SimpleTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLShaderObject.cpp">
+      <Filter>engine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph.cpp">
+      <Filter>engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraphNode.cpp">
+      <Filter>engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenObj.cpp">
+      <Filter>engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj.cpp">
+      <Filter>engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>engine\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="AppManager.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsObject.cpp">
+      <Filter>engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSolver.cpp">
+      <Filter>engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="StarSystem.cpp">
+      <Filter>game\StarSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceObject.cpp">
+      <Filter>game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Planet.cpp">
+      <Filter>game\StarSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Star.cpp">
+      <Filter>game\StarSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="AppBase.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GLUtils.cpp">
+      <Filter>engine\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleScene.cpp">
+      <Filter>engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderWarper.cpp">
+      <Filter>engine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="IInputHandler.cpp">
+      <Filter>engine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEvent.cpp">
+      <Filter>engine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="InputEvent.cpp">
+      <Filter>engine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="IGameEventHandler.cpp">
+      <Filter>engine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Orbit.cpp">
+      <Filter>engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricPrimitive.cpp">
+      <Filter>engine\DrawablePrimitives</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncHelper.cpp">
+      <Filter>engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawablePrimitive.cpp">
+      <Filter>engine\DrawablePrimitives</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedSprite.cpp">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteCollection.cpp">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteSet.cpp">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureGenerator.cpp">
+      <Filter>engine\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetTextureGenerator.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>engine\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AppTime.cpp">
+      <Filter>engine\Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="StarSystemScene.cpp">
+      <Filter>game\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Box.h">
+      <Filter>engine\SimpleTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="EventsManager.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureAtlasManager.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManeger.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>engine\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureAtlas.h">
+      <Filter>engine\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameBuffer.h">
+      <Filter>engine\VBO &amp; FBO</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArray.h">
+      <Filter>engine\VBO &amp; FBO</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>engine\VBO &amp; FBO</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>engine\Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameTimer.h">
+      <Filter>engine\Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="GLMatrixSet.h">
+      <Filter>engine\SimpleTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="GLShaderObject.h">
+      <Filter>engine\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph.h">
+      <Filter>engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraphNode.h">
+      <Filter>engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="IRender.h">
+      <Filter>engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj.h">
+      <Filter>engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenObj.h">
+      <Filter>engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>engine\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="AppManager.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsObject.h">
+      <Filter>engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="RungeKutta.h">
+      <Filter>engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsSolver.h">
+      <Filter>engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="StarSystem.h">
+      <Filter>game\StarSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceObject.h">
+      <Filter>game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Planet.h">
+      <Filter>game\StarSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Star.h">
+      <Filter>game\StarSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDefines.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="AppBase.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GLUtils.h">
+      <Filter>engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleScene.h">
+      <Filter>engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderWarper.h">
+      <Filter>engine\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="IInputHandler.h">
+      <Filter>engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="InputEvent.h">
+      <Filter>engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameEventHandler.h">
+      <Filter>engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Orbit.h">
+      <Filter>engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricPrimitive.h">
+      <Filter>engine\DrawablePrimitives</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncHelper.h">
+      <Filter>engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawablePrimitive.h">
+      <Filter>engine\DrawablePrimitives</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedSprite.h">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteCollection.h">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteSet.h">
+      <Filter>engine\DrawablePrimitives\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="AppDefines.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSettings.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDefines.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLImageLoader.h">
+      <Filter>engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="AppTime.h">
+      <Filter>engine\Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureGenerator.h">
+      <Filter>engine\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetTextureGenerator.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="StarSystemScene.h">
+      <Filter>game\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>

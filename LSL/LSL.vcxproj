@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4EC9C51D-D59B-4849-B235-8B5ECCF0707F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LSL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\XProj\source\tools\includes\mygui;E:\XProj\source\tools\includes\tb;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\XProj\source\tools\libs\MyGUI;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\XProj\source\tools\includes\mygui;E:\XProj\source\tools\includes\tb;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\XProj\source\tools\libs\MyGUI;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimatedSprite.cpp" />
+    <ClCompile Include="AppBase.cpp" />
+    <ClCompile Include="AppManager.cpp" />
+    <ClCompile Include="AppTime.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DrawablePrimitive.cpp" />
+    <ClCompile Include="EventsManager.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="FrameTimer.cpp" />
+    <ClCompile Include="GameEvent.cpp" />
+    <ClCompile Include="GameObj.cpp" />
+    <ClCompile Include="GeometricPrimitive.cpp" />
+    <ClCompile Include="GLMatrixSet.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="GLShaderObject.cpp" />
+    <ClCompile Include="GLUtils.cpp" />
+    <ClCompile Include="IGameEventHandler.cpp" />
+    <ClCompile Include="IInputHandler.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="PlanetTextureGenerator.cpp" />
+    <ClCompile Include="TextureGenerator.cpp" />
+    <ClCompile Include="InputEvent.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Orbit.cpp" />
+    <ClCompile Include="PhysicsObject.cpp" />
+    <ClCompile Include="PhysicsSolver.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneGraph.cpp" />
+    <ClCompile Include="SceneGraphNode.cpp" />
+    <ClCompile Include="ScreenObj.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="ShaderWarper.cpp" />
+    <ClCompile Include="SimpleScene.cpp" />
+    <ClCompile Include="SpaceObject.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteCollection.cpp" />
+    <ClCompile Include="SpriteSet.cpp" />
+    <ClCompile Include="Star.cpp" />
+    <ClCompile Include="StarSystem.cpp" />
+    <ClCompile Include="StarSystemScene.cpp" />
+    <ClCompile Include="SyncHelper.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureAtlas.cpp" />
+    <ClCompile Include="TextureAtlasManager.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="VertexArray.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
+    <ClCompile Include="VideoManeger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="AppBase.h" />
+    <ClInclude Include="AppDefines.h" />
+    <ClInclude Include="AppManager.h" />
+    <ClInclude Include="AppTime.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EngineDefines.h" />
+    <ClInclude Include="DrawablePrimitive.h" />
+    <ClInclude Include="EngineSettings.h" />
+    <ClInclude Include="EventsManager.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="FrameTimer.h" />
+    <ClInclude Include="GameDefines.h" />
+    <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="GameObj.h" />
+    <ClInclude Include="GeometricPrimitive.h" />
+    <ClInclude Include="GLMatrixSet.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="GLShaderObject.h" />
+    <ClInclude Include="GLUtils.h" />
+    <ClInclude Include="IGameEventHandler.h" />
+    <ClInclude Include="IInputHandler.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="PlanetTextureGenerator.h" />
+    <ClInclude Include="TextureGenerator.h" />
+    <ClInclude Include="InputEvent.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IRender.h" />
+    <ClInclude Include="IScene.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="OpenGLImageLoader.h" />
+    <ClInclude Include="Orbit.h" />
+    <ClInclude Include="PhysicsObject.h" />
+    <ClInclude Include="PhysicsSolver.h" />
+    <ClInclude Include="Planet.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="RungeKutta.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneGraph.h" />
+    <ClInclude Include="SceneGraphNode.h" />
+    <ClInclude Include="ScreenObj.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="ShaderWarper.h" />
+    <ClInclude Include="SimpleScene.h" />
+    <ClInclude Include="SpaceObject.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteCollection.h" />
+    <ClInclude Include="SpriteSet.h" />
+    <ClInclude Include="Star.h" />
+    <ClInclude Include="StarSystem.h" />
+    <ClInclude Include="StarSystemScene.h" />
+    <ClInclude Include="SyncHelper.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureAtlas.h" />
+    <ClInclude Include="TextureAtlasManager.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="VertexArray.h" />
+    <ClInclude Include="VertexBuffer.h" />
+    <ClInclude Include="VideoManeger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
